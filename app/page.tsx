@@ -14,9 +14,6 @@ export default function Home() {
       <Link href="/" className="text-gray-700 hover:text-blue-600">
         Home
       </Link>
-      <Link href="/apply" className="text-gray-700 hover:text-blue-600">
-        Apply
-      </Link>
       <Link href="/login" className="text-gray-700 hover:text-blue-600">
         Login
       </Link>
