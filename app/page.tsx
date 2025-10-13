@@ -1,31 +1,44 @@
+
 "use client";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Navbar */}
-      <header className="bg-white shadow-md fixed w-full z-50">
-        <nav className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-          <h1 className="text-3xl font-bold text-blue-700">SKS Travels & Tourism</h1>
-          <div className="flex items-center space-x-4">
-            <a href="#services" className="text-gray-700 hover:text-blue-600">
-              Services
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600">
-              About
-            </a>
-            <a href="#faq" className="text-gray-700 hover:text-blue-600">
-              FAQ
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600">
-              Contact
-            </a>
-            <button className="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
-              Apply Now
-            </button>
-          </div>
-        </nav>
-      </header>
+{/* Navbar */}
+<header className="bg-white shadow-md fixed w-full z-50">
+  <nav className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+    <h1 className="text-3xl font-bold text-blue-700">SKS Travels & Tourism</h1>
+
+    <div className="flex items-center space-x-4">
+      <Link href="/" className="text-gray-700 hover:text-blue-600">
+        Home
+      </Link>
+      <Link href="/apply" className="text-gray-700 hover:text-blue-600">
+        Apply
+      </Link>
+      <Link href="/login" className="text-gray-700 hover:text-blue-600">
+        Login
+      </Link>
+      <Link href="/register" className="text-gray-700 hover:text-blue-600">
+        Register
+      </Link>
+      <Link href="/dashboard" className="text-gray-700 hover:text-blue-600">
+        Dashboard
+      </Link>
+      <Link href="/admin" className="text-gray-700 hover:text-blue-600">
+        Admin
+      </Link>
+
+      <Link
+        href="/apply"
+        className="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition"
+      >
+        Apply Now
+      </Link>
+    </div>
+  </nav>
+</header>
 
  {/* Hero Section */}
 <section
