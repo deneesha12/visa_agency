@@ -31,7 +31,7 @@ export default function Home() {
 <section
   className="w-full text-center bg-cover bg-center bg-no-repeat relative flex flex-col items-center justify-center"
   style={{
-   backgroundImage: "url('/63d826a866fc0.webp')",
+   backgroundImage: "url(hero1.jpg.jpg)",
 
     minHeight: "100vh",
     width: "100%",
