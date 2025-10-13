@@ -64,42 +64,43 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="py-20 max-w-7xl mx-auto px-6">
-        <h3 className="text-3xl font-semibold text-center text-blue-700 mb-10">
-          Our Visa Services
-        </h3>
+  <h3 className="text-3xl font-semibold text-center text-blue-700 mb-10">
+    Our Visa Services
+  </h3>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <Link
-            href="/tourist-visa"
-            className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
-          >
-            <h4 className="text-xl font-semibold mb-3 text-blue-600">Tourist Visas</h4>
-            <p className="text-gray-600">
-              Apply easily for your next holiday destination with complete guidance.
-            </p>
-          </Link>
+  <div className="grid md:grid-cols-3 gap-8">
+    <Link
+      href="/tourist-visa"
+      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
+    >
+      <h4 className="text-xl font-semibold mb-3 text-blue-600">Tourist Visas</h4>
+      <p className="text-gray-600">
+        Apply easily for your next holiday destination with complete guidance.
+      </p>
+    </Link>
 
-          <Link
-            href="/business-visa"
-            className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
-          >
-            <h4 className="text-xl font-semibold mb-3 text-blue-600">Business Visas</h4>
-            <p className="text-gray-600">
-              We assist with professional travel applications for business purposes.
-            </p>
-          </Link>
+    <Link
+      href="/business-visa"
+      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
+    >
+      <h4 className="text-xl font-semibold mb-3 text-blue-600">Business Visas</h4>
+      <p className="text-gray-600">
+        We assist with professional travel applications for business purposes.
+      </p>
+    </Link>
 
-          <Link
-            href="/student-visa"
-            className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
-          >
-            <h4 className="text-xl font-semibold mb-3 text-blue-600">Student Visas</h4>
-            <p className="text-gray-600">
-              Get help applying for international education visas with step-by-step support.
-            </p>
-          </Link>
-        </div>
-      </section>
+    <Link
+      href="/student-visa"
+      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
+    >
+      <h4 className="text-xl font-semibold mb-3 text-blue-600">Student Visas</h4>
+      <p className="text-gray-600">
+        Get help applying for international education visas with step-by-step support.
+      </p>
+    </Link>
+  </div>
+</section>
+
 
       {/* About Section */}
       <section id="about" className="bg-blue-900 text-white py-20 text-center">
