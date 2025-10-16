@@ -13,7 +13,7 @@ export default function Home() {
             <Link href="/" className="text-gray-700 hover:text-blue-600">
               Home
             </Link>
-            <Link href="/login" className="text-gray-700 hover:text-blue-600">
+            {/* <Link href="/login" className="text-gray-700 hover:text-blue-600">
               Login
             </Link>
             <Link href="/register" className="text-gray-700 hover:text-blue-600">
@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
             <Link href="/admin" className="text-gray-700 hover:text-blue-600">
               Admin
-            </Link>
+            </Link> */}
             <Link
               href="/apply"
               className="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition"
@@ -50,7 +50,7 @@ export default function Home() {
             Simplify Your Visa Application Process
           </h2>
           <p className="text-gray-200 mb-8 max-w-2xl mx-auto">
-            VisaPro Connect helps applicants easily apply, upload documents, and track their visa
+             SKS Travels & Tourism helps applicants easily apply, upload documents, and track their visa
             status — all in one secure platform.
           </p>
           <Link
@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 max-w-7xl mx-auto px-6">
+<section id="services" className="py-20 max-w-7xl mx-auto px-6">
   <h3 className="text-3xl font-semibold text-center text-blue-700 mb-10">
     Our Visa Services
   </h3>
@@ -71,35 +71,63 @@ export default function Home() {
   <div className="grid md:grid-cols-3 gap-8">
     <Link
       href="/tourist-visa"
-      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
+      className="group bg-white rounded-xl shadow hover:shadow-2xl transition overflow-hidden block"
     >
-      <h4 className="text-xl font-semibold mb-3 text-blue-600">Tourist Visas</h4>
-      <p className="text-gray-600">
-        Apply easily for your next holiday destination with complete guidance.
-      </p>
+      <div className="h-56 w-full overflow-hidden">
+        <img
+          src="/images/tourist.jpg"
+          alt="Tourist Visa"
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+        />
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-semibold mb-3 text-blue-600">Tourist Visas</h4>
+        <p className="text-gray-600">
+          Apply easily for your next holiday destination with complete guidance.
+        </p>
+      </div>
     </Link>
 
     <Link
       href="/business-visa"
-      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
+      className="group bg-white rounded-xl shadow hover:shadow-2xl transition overflow-hidden block"
     >
-      <h4 className="text-xl font-semibold mb-3 text-blue-600">Business Visas</h4>
-      <p className="text-gray-600">
-        We assist with professional travel applications for business purposes.
-      </p>
+      <div className="h-56 w-full overflow-hidden">
+        <img
+          src="/images/business.jpg"
+          alt="Business Visa"
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+        />
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-semibold mb-3 text-blue-600">Business Visas</h4>
+        <p className="text-gray-600">
+          We assist with professional travel applications for business purposes.
+        </p>
+      </div>
     </Link>
 
     <Link
       href="/student-visa"
-      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
+      className="group bg-white rounded-xl shadow hover:shadow-2xl transition overflow-hidden block"
     >
-      <h4 className="text-xl font-semibold mb-3 text-blue-600">Student Visas</h4>
-      <p className="text-gray-600">
-        Get help applying for international education visas with step-by-step support.
-      </p>
+      <div className="h-56 w-full overflow-hidden">
+        <img
+          src="/images/student.jpg"
+          alt="Student Visa"
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+        />
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-semibold mb-3 text-blue-600">Student Visas</h4>
+        <p className="text-gray-600">
+          Get help applying for international education visas with step-by-step support.
+        </p>
+      </div>
     </Link>
   </div>
 </section>
+
 
 
       {/* About Section */}
@@ -228,4 +256,4 @@ export default function Home() {
       </footer>
     </main>
   );
-}
+} 
