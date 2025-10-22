@@ -1,49 +1,39 @@
-import Image from "next/image";
+"use client";
+import Link from "next/link";
 
 export default function StudentVisa() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      {/* Hero */}
-      <div className="relative w-full h-64 md:h-80">
-        <Image
-          src="/images/Student-Visa.jpg"
-          alt="Student Visa"
-          fill
-          className="object-cover brightness-75"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
-            Student Visa
-          </h1>
-        </div>
-      </div>
+    <main className="min-h-screen bg-gray-50 py-20 px-6">
+      <div className="max-w-5xl mx-auto text-center">
+        <h1 className="text-4xl font-bold text-blue-700 mb-4">Student Visa</h1>
+        <p className="text-gray-600 mb-8">
+          Start your academic journey abroad! We guide you through every step of your student visa process.
+        </p>
 
-      {/* Content */}
-      <section className="max-w-6xl mx-auto py-12 px-6">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">
-            Study Abroad with Confidence
-          </h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            SKS Travels helps students achieve their academic dreams overseas.
-            We provide personalized guidance for documentation, interviews, and
-            post-arrival support.
-          </p>
-
-          <ul className="list-disc ml-6 space-y-2 text-gray-600">
-            <li>Visa support for UK, USA, Canada, and Australia</li>
-            <li>Help with SOP writing and financial documentation</li>
-            <li>University application and counseling services</li>
-            <li>Visa renewals and extension assistance</li>
+        <div className="bg-white p-8 rounded-2xl shadow-md text-left space-y-4">
+          <h2 className="text-2xl font-semibold text-blue-600">Required Documents</h2>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li>Valid Passport</li>
+            <li>University/College admission letter</li>
+            <li>Proof of tuition fee payment</li>
+            <li>Bank statements (for financial support)</li>
+            <li>Medical and police clearance certificates</li>
           </ul>
 
-          <div className="mt-8">
-            <button className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
-              Start Application
-            </button>
-          </div>
+          <h2 className="text-2xl font-semibold text-blue-600 mt-8">Processing Time</h2>
+          <p className="text-gray-700">Varies from 2–4 weeks depending on destination country.</p>
+
+          <h2 className="text-2xl font-semibold text-blue-600 mt-8">Service Fee</h2>
+          <p className="text-gray-700">LKR 18,000 (includes consultation and file preparation).</p>
         </div>
-      </section>
+
+        <Link
+          href="/apply"
+          className="inline-block mt-10 bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition"
+        >
+          Apply for Student Visa
+        </Link>
+      </div>
     </main>
   );
 }
