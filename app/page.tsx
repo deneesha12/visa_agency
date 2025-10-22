@@ -7,13 +7,15 @@ export default function Home() {
       {/* Navbar */}
       <header className="bg-white shadow-md fixed w-full z-50">
         <nav className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-          <h1 className="text-3xl font-bold text-blue-700">SKS Travels & Tourism</h1>
+          <h1 className="text-3xl font-bold text-blue-700">
+            SKS Travels & Tourism
+          </h1>
 
           <div className="flex items-center space-x-4">
             <Link href="/" className="text-gray-700 hover:text-blue-600">
               Home
             </Link>
-            <Link href="/login" className="text-gray-700 hover:text-blue-600">
+            {/* <Link href="/login" className="text-gray-700 hover:text-blue-600">
               Login
             </Link>
             <Link href="/register" className="text-gray-700 hover:text-blue-600">
@@ -24,7 +26,7 @@ export default function Home() {
             </Link>
             <Link href="/admin" className="text-gray-700 hover:text-blue-600">
               Admin
-            </Link>
+            </Link> */}
             <Link
               href="/apply"
               className="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition"
@@ -39,7 +41,7 @@ export default function Home() {
       <section
         className="w-full text-center bg-cover bg-center bg-no-repeat relative flex flex-col items-center justify-center"
         style={{
-          backgroundImage: "url('/hero1.jpg.jpg')",
+          backgroundImage: "url('/hero1.jpg.jpg')", // ✅ exact file name
           minHeight: "100vh",
           width: "100%",
         }}
@@ -50,8 +52,8 @@ export default function Home() {
             Simplify Your Visa Application Process
           </h2>
           <p className="text-gray-200 mb-8 max-w-2xl mx-auto">
-            VisaPro Connect helps applicants easily apply, upload documents, and track their visa
-            status — all in one secure platform.
+            SKS Travels & Tourism helps applicants easily apply, upload
+            documents, and track their visa status — all in one secure platform.
           </p>
           <Link
             href="/apply"
@@ -62,53 +64,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 max-w-7xl mx-auto px-6">
-  <h3 className="text-3xl font-semibold text-center text-blue-700 mb-10">
-    Our Visa Services
-  </h3>
+      {/* ✅ Visa Services Section */}
+      <section id="services" className="py-20 bg-gray-50">
+        <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
+          Our Visa Services
+        </h2>
 
-  <div className="grid md:grid-cols-3 gap-8">
-    <Link
-      href="/tourist-visa"
-      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
-    >
-      <h4 className="text-xl font-semibold mb-3 text-blue-600">Tourist Visas</h4>
-      <p className="text-gray-600">
-        Apply easily for your next holiday destination with complete guidance.
-      </p>
-    </Link>
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+          {/* Tourist Visa */}
+          <Link href="/tourist-visa">
+            <div
+              className="relative h-72 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-cover bg-center overflow-hidden"
+              style={{
+                backgroundImage: "url('/Tourist-Visa.jpg')",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                <h3 className="text-2xl font-semibold mb-2">Tourist Visa</h3>
+                <p className="text-sm max-w-xs">
+                  Travel for leisure and explore the world with ease.
+                </p>
+              </div>
+            </div>
+          </Link>
 
-    <Link
-      href="/business-visa"
-      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
-    >
-      <h4 className="text-xl font-semibold mb-3 text-blue-600">Business Visas</h4>
-      <p className="text-gray-600">
-        We assist with professional travel applications for business purposes.
-      </p>
-    </Link>
+          {/* Business Visa */}
+          <Link href="/business-visa">
+            <div
+              className="relative h-72 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-cover bg-center overflow-hidden"
+              style={{
+                backgroundImage: "url('/Business-Visa.webp')",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                <h3 className="text-2xl font-semibold mb-2">Business Visa</h3>
+                <p className="text-sm max-w-xs">
+                  Attend meetings, conferences, and expand your business globally.
+                </p>
+              </div>
+            </div>
+          </Link>
 
-    <Link
-      href="/student-visa"
-      className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block"
-    >
-      <h4 className="text-xl font-semibold mb-3 text-blue-600">Student Visas</h4>
-      <p className="text-gray-600">
-        Get help applying for international education visas with step-by-step support.
-      </p>
-    </Link>
-  </div>
-</section>
-
+          {/* Student Visa */}
+          <Link href="/student-visa">
+            <div
+              className="relative h-72 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-cover bg-center overflow-hidden"
+              style={{
+                backgroundImage: "url('/Student-Visa.jpg')",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                <h3 className="text-2xl font-semibold mb-2">Student Visa</h3>
+                <p className="text-sm max-w-xs">
+                  Achieve your academic goals with expert visa guidance.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="bg-blue-900 text-white py-20 text-center">
-        <h3 className="text-3xl font-semibold mb-4">About SKS Travels & Tourism</h3>
+        <h3 className="text-3xl font-semibold mb-4">
+          About SKS Travels & Tourism
+        </h3>
         <p className="max-w-2xl mx-auto text-blue-100">
-          We are a Sri Lanka-based visa agency committed to simplifying global travel. Our goal is
-          to make visa processing faster, easier, and more transparent for applicants and agencies
-          alike.
+          We are a Sri Lanka-based visa agency committed to simplifying global
+          travel. Our goal is to make visa processing faster, easier, and more
+          transparent for applicants and agencies alike.
         </p>
       </section>
 
@@ -119,9 +146,12 @@ export default function Home() {
         </h3>
         <div className="space-y-6">
           <div>
-            <h4 className="font-semibold text-lg text-gray-800">How do I apply for a visa?</h4>
+            <h4 className="font-semibold text-lg text-gray-800">
+              How do I apply for a visa?
+            </h4>
             <p className="text-gray-600">
-              Simply click “Apply Now,” create an account, and follow the guided application steps.
+              Simply click “Apply Now,” create an account, and follow the guided
+              application steps.
             </p>
           </div>
           <div>
@@ -129,13 +159,17 @@ export default function Home() {
               Can I track my visa application?
             </h4>
             <p className="text-gray-600">
-              Yes! After logging in, you can track the status of your application in real time.
+              Yes! After logging in, you can track the status of your
+              application in real time.
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-lg text-gray-800">How do I contact support?</h4>
+            <h4 className="font-semibold text-lg text-gray-800">
+              How do I contact support?
+            </h4>
             <p className="text-gray-600">
-              You can reach our team via the contact form below or through our support email.
+              You can reach our team via the contact form below or through our
+              support email.
             </p>
           </div>
         </div>
@@ -143,7 +177,9 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="bg-gray-800 py-20 text-center text-black">
-        <h3 className="text-3xl font-semibold mb-10 text-blue-700">Contact Us</h3>
+        <h3 className="text-3xl font-semibold mb-10 text-blue-700">
+          Contact Us
+        </h3>
         <form className="max-w-xl mx-auto space-y-4">
           <input
             type="text"
@@ -172,14 +208,16 @@ export default function Home() {
           <div>
             <h3 className="text-2xl font-semibold text-white mb-3">Visa</h3>
             <p className="text-gray-400">
-              Your trusted partner in easy visa applications. We simplify your journey with clear
-              guidance and support for all types of visas.
+              Your trusted partner in easy visa applications. We simplify your
+              journey with clear guidance and support for all types of visas.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-3">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white mb-3">
+              Quick Links
+            </h4>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="#about" className="hover:text-white transition">
