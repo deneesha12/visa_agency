@@ -33,6 +33,10 @@ export default function Home() {
             >
               Apply Now
             </Link>
+            <Link href="/travel-packages" className="text-gray-700 hover:text-blue-600">
+  Travel Packages
+</Link>
+
           </div>
         </nav>
       </header>
@@ -76,7 +80,7 @@ export default function Home() {
         title: "Travel Packages",
         desc: "Plan your dream vacation with our customized and affordable travel packages.",
         img: "/Tourist-Visa.jpg",
-        href: "/travel-packages",
+         href: "/travel-packages",
       },
       {
         title: "Visa Processing",
