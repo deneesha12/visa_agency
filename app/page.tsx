@@ -64,50 +64,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ✅ Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
-        <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
-          Our Visa Services
-        </h2>
+{/* ✅ Services Section */}
+<section id="services" className="py-20 bg-gray-50">
+  <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
+    Core Services
+  </h2>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
-          {[
-            {
-              title: "Tourist Visa",
-              desc: "Travel for leisure and explore the world with ease.",
-              img: "/Tourist-Visa.jpg",
-              href: "/tourist-visa",
-            },
-            {
-              title: "Business Visa",
-              desc: "Attend meetings, conferences, and expand your business globally.",
-              img: "/Business-Visa.webp",
-              href: "/business-visa",
-            },
-            {
-              title: "Student Visa",
-              desc: "Achieve your academic goals with expert visa guidance.",
-              img: "/Student-Visa.jpg",
-              href: "/student-visa",
-            },
-          ].map((service) => (
-            <Link href={service.href} key={service.title}>
-              <div
-                className="relative h-72 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-cover bg-center overflow-hidden"
-                style={{ backgroundImage: `url(${service.img})` }}
-              >
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-                  <h3 className="text-2xl font-semibold mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm max-w-xs">{service.desc}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
+  <div className="grid md:grid-cols-4 gap-10 max-w-6xl mx-auto px-6">
+    {[
+      {
+        title: "Travel Packages",
+        desc: "Plan your dream vacation with our customized and affordable travel packages.",
+        img: "/Tourist-Visa.jpg",
+        href: "/travel-packages",
+      },
+      {
+        title: "Visa Processing",
+        desc: "Fast, reliable visa handling for tourism, business, and student travel.",
+        img: "/Business-Visa.webp",
+        href: "/visa-processing",
+      },
+      {
+        title: "Air Ticket Services",
+        desc: "Get the best deals on international and domestic flight bookings.",
+        img: "/Student-Visa.jpg",
+        href: "/air-ticket-services",
+      },
+      {
+        title: "Consultation & Travel Guidance",
+        desc: "Expert advice to help you prepare travel documents and choose the right destination.",
+        img: "/Tourist-Visa.jpg", // you can change this image if you want
+        href: "/consultation-guidance",
+      },
+    ].map((service) => (
+      <Link href={service.href} key={service.title}>
+        <div
+          className="relative h-72 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-cover bg-center overflow-hidden"
+          style={{ backgroundImage: `url(${service.img})` }}
+        >
+          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+            <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+            <p className="text-sm max-w-xs">{service.desc}</p>
+          </div>
         </div>
-      </section>
+      </Link>
+    ))}
+  </div>
+</section>
 
       {/* ✅ About Section */}
       <section
@@ -268,6 +272,7 @@ export default function Home() {
     <div>
       <h4 className="text-xl font-semibold text-blue-400 mb-4">Contact Us</h4>
       <div className="space-y-3 text-gray-300">
+        <p> SKS Travels & Tourism(Pvt) Ltd</p>
         <p>📍 No.18, New Bus Stand, Nattandiya, Sri Lanka</p>
         <p>📞 0776426033 / 0775221739</p>
         <a
